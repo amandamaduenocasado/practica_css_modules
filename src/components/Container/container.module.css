@@ -1,0 +1,10 @@
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (width>=768px) {
+    .box {
+        flex-direction: row;
+    }
+}
