@@ -1,0 +1,67 @@
+.orange {
+    background-color: #E28625;
+}
+
+.blue {
+    background-color: #006971;
+}
+
+.green {
+    background-color: #004140;
+}
+
+.textStyles {
+    font-size: 15px;
+    line-height: 25px;
+    color: white; 
+    opacity: 0.75;
+}
+
+.headerStyles {
+    font-family: 'Big Shoulders Display', serif; 
+    font-size: 40px;
+    color: #f2f2f2; 
+    margin: 0;
+}
+
+.cardStyles {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 35px; 
+    height: 500px;
+    width: 300px;
+    padding: 48px;
+}
+
+.titleStyles {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: auto;
+}
+
+.buttonStyles {
+    border-style: none;
+    background-color: #f2f2f2;
+    width: 146px;
+    height: 48px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 13px;
+}
+
+@media (hover: hover) {
+    .buttonStyles:hover {
+        border: 2px solid #f2f2f2;
+        background-color: transparent;
+        color: #fff; 
+        padding: 11px;
+    }
+}
+
+
+.image {
+    width: 64px;
+    height: 40px;
+}

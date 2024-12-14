@@ -1,12 +1,14 @@
-import Box from "./components/box/Box";
+import Card from "./components/card/Card";
 import Container from "./components/Container/Container";
+import { CARDS_INFO } from './constants/cards-info';
 
 const App = () => {
 	return (
 		<Container>
-			<Box color='yellow' title='SEDANS' text = 'Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.'	/>
-			<Box color='blue' title='SUVS' text = 'Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.' />
-			<Box color='green' title='LUXURY' text = 'Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style. ' />
+			{
+				CARDS_INFO.map(card => (
+					< Card key = {card.id} {...card} /> // No olvidar esta propt de key y el card.id. React lo necesita internamente.
+		))}
 		</Container>
 	);
 };
